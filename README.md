@@ -1,6 +1,6 @@
 # teniireta-toolbar
 
-Toolbar module for [teniireta](https://github.com/thoughtsunificator/teniireta)
+Toolbar component for [teniireta](https://github.com/thoughtsunificator/teniireta)
 
 ## Getting Started
 
