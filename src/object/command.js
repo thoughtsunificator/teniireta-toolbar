@@ -2,6 +2,25 @@ import { Observable } from "domodel"
 
 export default class extends Observable {
 
+	constructor(model, binding) {
+		this._model = model
+		this._binding = binding
+	}
+
+	/**
+	 * @type {object}
+	 */
+	get model() {
+		return this._model
+	}
+
+	/**
+	 * @type {Binding}
+	 */
+	get binding() {
+		return this._binding
+	}
+
 	/**
 	 * @param   {object} data
 	 */
