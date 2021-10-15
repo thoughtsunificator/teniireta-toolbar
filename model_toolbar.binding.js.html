@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>Home - Documentation</title>
+    <title>model/toolbar.binding.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -34,41 +34,38 @@
 
 <div id="main">
     
+    <h1 class="page-title">model/toolbar.binding.js</h1>
+    
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { Binding } from "domodel"
 
+/**
+ * @global
+ */
+class ToolbarBinding extends Binding {
 
-    <section class="package">
-        <h3> </h3>		
+	/**
+	 * @param {object}  properties
+	 * @param {Editor}  properties.editor
+	 * @param {Toolbar} properties.toolbar
+	 */
+	constructor(properties) {
+		super(properties)
+	}
+
+}
+
+export default ToolbarBinding
+</code></pre>
+        </article>
     </section>
-
-
-
-
-
-
-
-
-
-    
-
-
-
-    <section class="readme usertext">
-        <article><h1 id="teniireta-toolbar">teniireta-toolbar</h1>
-<p>Toolbar extension for <a href="https://github.com/thoughtsunificator/teniireta">teniireta</a></p>
-<h2 id="getting-started">Getting Started</h2>
-<h3 id="installing">Installing</h3>
-<ul>
-<li><code>npm install @teniireta/toolbar</code></li>
-</ul></article>
-    </section>
-
-
 
 
 
