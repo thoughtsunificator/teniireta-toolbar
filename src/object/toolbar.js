@@ -1,9 +1,10 @@
 import { Observable } from "domodel"
 
-export default class extends Observable {
-
-	constructor() {
-		super()
-	}
+/**
+ * @global
+ */
+class Toolbar extends Observable {
 
 }
+
+export default Toolbar

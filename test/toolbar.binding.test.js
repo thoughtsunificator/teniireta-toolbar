@@ -2,6 +2,8 @@ import assert from "assert"
 import { JSDOM } from "jsdom"
 import { Core, Binding } from "domodel"
 
+import { ToolbarBinding } from "../index.js"
+
 const virtualDOM = new JSDOM()
 const window = virtualDOM.window
 const { document } = window
@@ -21,7 +23,7 @@ describe("toolbar.binding", () => {
 	})
 
 	it("instance", () => {
-		assert.ok(new Binding() instanceof Binding)
+		assert.ok(ToolbarBinding.prototype instanceof Binding)
 	})
 
 

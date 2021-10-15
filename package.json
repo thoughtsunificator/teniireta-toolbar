@@ -1,6 +1,6 @@
 {
 	"name": "@teniireta/toolbar",
-	"description": "Toolbar component for teniireta",
+	"description": "Toolbar extension for teniireta",
 	"type": "module",
 	"devDependencies": {
 		"docdash": "^1.2.0",
@@ -28,5 +28,5 @@
 	},
 	"author": "Romain Lebesle <oss@thoughtsunificator.me> (https://thoughtsunificator.me)",
 	"license": "MIT",
-	"version": "0.0.9"
+	"version": "0.0.11"
 }

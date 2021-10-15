@@ -1,7 +1,14 @@
 import { Observable } from "domodel"
 
-export default class extends Observable {
+/**
+ * @global
+ */
+class Command extends Observable {
 
+	/**
+	 * @param   {object}  model
+	 * @param   {Binding} binding
+	 */
 	constructor(model, binding) {
 		this._model = model
 		this._binding = binding
@@ -50,3 +57,5 @@ export default class extends Observable {
 	createBBNode(data) {}
 
 }
+
+export default Command
