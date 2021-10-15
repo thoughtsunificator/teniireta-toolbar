@@ -1,12 +1,19 @@
 import { Binding } from "domodel"
 
-export default class extends Binding {
+/**
+ * @global
+ */
+class ToolbarBinding extends Binding {
 
-	onCreated() {
-
-		const { editor, toolbar } = this.properties
-
-
+	/**
+	 * @param {object}  properties
+	 * @param {Editor}  properties.editor
+	 * @param {Toolbar} properties.toolbar
+	 */
+	constructor(properties) {
+		super(properties)
 	}
 
 }
+
+export default ToolbarBinding

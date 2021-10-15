@@ -1,27 +1,12 @@
 import assert from "assert"
-import { JSDOM } from "jsdom"
-import { Core, Binding } from "domodel"
+import { Observable } from "domodel"
 
-const virtualDOM = new JSDOM()
-const window = virtualDOM.window
-const { document } = window
-
-const RootModel = { tagName: "div" }
-let rootBinding
+import { Toolbar } from "../index.js"
 
 describe("toolbar", () => {
 
-	beforeEach(() => {
-		rootBinding = new Binding()
-		Core.run(RootModel, { parentNode: document.body, binding: rootBinding })
-	})
-
-	afterEach(() => {
-		rootBinding.remove()
-	})
-
 	it("instance", () => {
-		assert.ok(new Binding() instanceof Binding)
+		assert.ok(Toolbar.prototype instanceof Observable)
 	})
 
 })

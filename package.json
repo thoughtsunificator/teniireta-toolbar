@@ -1,6 +1,6 @@
 {
 	"name": "@teniireta/toolbar",
-	"description": "Toolbar component for teniireta",
+	"description": "Toolbar extension for teniireta",
 	"type": "module",
 	"devDependencies": {
 		"docdash": "^1.2.0",
